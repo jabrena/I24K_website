@@ -1,0 +1,39 @@
+
+/* RESET */
+/* convert this component in a normalization mixing it with the current base styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img,
+ins, kbd, q, s, samp, small, strike,
+ssub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, textarea, tfoot, thead, tr, th, td,
+center, u, b, i {
+	border: 0;
+	font-size: 100%;
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, strong, th {
+	font-weight: bold;
+}
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Use de body font-family */
+input, select, textarea, button{
+	font-family: inherit;
+}
+
+a img{border:0; text-decoration:none;}

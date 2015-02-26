@@ -1,0 +1,38 @@
+header {
+	background: $std-white;
+	padding:0 4rem;
+	@include clearfix;
+	
+	h1{
+		color:$std-gold2;
+		@extend %fontTitle;
+		font-size:4.2rem;
+		font-weight:200;
+		float:left;
+	}
+	nav{
+		float:right;
+		padding:1.5rem 0;
+
+		ul{
+			li{
+				display:inline-block;
+				margin:0 1rem;
+				a{
+					display:block;
+
+					font-size:1.6rem;
+					text-decoration:none;
+					color:$std-black;
+					text-transform:uppercase;
+					&::first-letter {
+						  color:$std-gold;
+						  font-size:2.1rem;
+						}
+				}
+			}
+		}
+	}
+
+
+}

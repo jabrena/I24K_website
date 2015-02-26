@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*
+ * Copyright (c) 2015 Rescue.
+ * @date  05/02/2015
+ * @version Beta
+ */
+
+/** Imports & config **/
+
+@import "../sass/config";
+
+//Base sizes
+$line-height: 2rem;
+
+
+@import "../sass/core/_mixins";
+@import "../sass/core/reset";
+@import "../sass/core/fonts";
+@import "../sass/core/base";
+@import "../sass/components/header";
+@import "../sass/components/heading";
+@import "../sass/components/section";
+@import "../sass/components/button";
+@import "../sass/components/accessibility";
+@import "../sass/components/footer";
+
+@media all and (max-width:997px){
+	@import "../sass/components/adaptative";
+}
+

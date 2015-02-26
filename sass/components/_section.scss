@@ -1,0 +1,92 @@
+section{
+		width:$global-width;
+		
+	}
+article {
+		width:$content-width;
+		margin:0 auto;
+		padding:0.5rem;
+	}
+
+#one{
+
+	background: url('img/one.jpg') no-repeat;
+	background-size:$global-bg-size;
+	
+	article{
+		padding:10rem 0;
+		img {
+			text-align:center;
+			display:block;
+			margin:0 auto;
+			width:86%;
+		}
+	}
+
+}	
+
+
+
+
+#tech{
+	
+	background: url('img/bgWork.png') no-repeat;
+	background-size:$global-bg-size;
+	
+	article{
+		padding:3rem 0;
+	}
+	ul{
+		overflow:hidden;
+		@include clearfix;
+		li{
+			width:9.6rem;
+			display:block;
+			float:left;
+			font-size:3rem;
+			text-align:center;
+			margin:0 0 0 14.9rem;
+
+
+			span.icon{
+				width:9.6rem;
+				height:9.6rem;
+				border:1px solid $std-white;
+				display:block;
+				border-radius:0.5rem;
+				margin:0 0 3.6rem 0;
+
+			}
+
+		 &.web
+		 	{
+				margin:0 0 0 7.7rem;
+		 		span.icon{background: url('img/sprite.svg') center top no-repeat;}
+		 		} 
+         &.mobile span.icon{background: url('img/sprite.svg') center -10rem no-repeat;}
+		 &.ux span.icon{background: url('img/sprite.svg') center -20rem no-repeat;}
+		 &.iot span.icon{background: url('img/sprite.svg') center -30rem no-repeat;}
+
+		}
+	}
+}
+
+
+#contact{
+	background: $std-black1;
+	color: $std-gold;
+	font-size:2rem;
+	padding:4rem 0;
+	overflow:hidden;
+	
+	article{
+		@include clearfix;
+	}
+
+	div {float:left; display:block;}
+
+	.description{
+		width:70%;
+
+	}
+}

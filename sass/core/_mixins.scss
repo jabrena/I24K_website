@@ -1,0 +1,19 @@
+
+
+@mixin ico($img,$position:0 0,$color:transparent,$repeat: no-repeat) {
+    background: {
+    	color: $color;
+      image: url("../img/"+$img+".svg"), none;
+      position: $position;
+      repeat: $repeat;
+      // size: $size;
+    }
+}
+
+@mixin clearfix(){
+  &:after{
+    clear: both; content: "."; display: block; height: 0; visibility: hidden;
+  }
+}
+
+

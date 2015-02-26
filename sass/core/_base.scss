@@ -1,0 +1,16 @@
+html{
+
+	font-size:x-small;
+	}
+
+body{ 
+
+		padding:0;
+		@extend %fontnormal;
+		width:$global-width;
+		background: $std-bg;
+	}
+
+a, a:hover{
+	text-decoration:none;
+}
