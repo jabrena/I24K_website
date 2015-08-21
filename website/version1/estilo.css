@@ -24,7 +24,7 @@ body{
 	height: 25%;
 	float:left;
 	overflow:hidden;
-	background: url(/Users/macbookpro/Desktop/24k/I24k3/fondos/DSC_9520.JPG) center center no-repeat fixed;
+	background: url(fondos/DSC_9520.JPG) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 	
@@ -36,7 +36,7 @@ body{
 	width: 100%;
 	height: 100%;
 	/*float:left;*/
-	background:url(/Users/macbookpro/Desktop/24k/I24k3/imagenes/diamantecolor.png) no-repeat fixed center center;
+	background:url(imagenes/diamantecolor.png) no-repeat fixed center center;
 	background-size:40%;
 	background-attachment: fixed;
 }
@@ -62,7 +62,7 @@ body{
 	height: 25%;
 	float:left;
 	overflow:hidden;
-	background: url(/Users/macbookpro/Desktop/24k/I24k3/fondos/DSC_9572.JPG) center center no-repeat fixed;
+	background: url(fondos/DSC_9572.JPG) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -87,7 +87,7 @@ body{
 	height: 25%;
 	float:left;
 	overflow:hidden;
-	background: url(/Users/macbookpro/Desktop/24k/I24k3/fondos/DSCN0248tokluz.jpg) center center no-repeat fixed;
+	background: url(fondos/DSCN0248tokluz.jpg) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -98,7 +98,7 @@ body{
 	height:100%;
 	float:left;
 	overflow:hidden;
-	background: url(/Users/macbookpro/Desktop/24k/I24k3/fondos/mundodoradoportatilsolocopia.png) center center no-repeat fixed;
+	background: url(fondos/mundodoradoportatilsolocopia.png) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -109,7 +109,7 @@ body{
 	height: 25%;
 	float:left;
 	overflow:hidden;
-	background: url(/Users/macbookpro/Desktop/24k/I24k3/fondos/DSC_9562.JPG) center center no-repeat fixed;
+	background: url(fondos/DSC_9562.JPG) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
