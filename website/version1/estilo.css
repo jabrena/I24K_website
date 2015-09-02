@@ -9,22 +9,48 @@
 
 
 body{
-	background-color: rgba(254,238,27,1.00);
+	background-color: rgba(255,255,255,1.00);
     -moz-background-size:cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
 	background-position:center;
 	width: 100%;
-	height: 3200px;
+	height: 3445px;
+	position: relative;
+	z-index:0;
+}
+
+#nav{
+	margin-top: 25%;
+	list-style: none;
+	position: fixed;
+	right: 20px;
+	z-index: 999;
+}
+
+#nav li{
+	margin: 0 0 15px 0;	
+}
+#nav li a {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: white;
+	border: solid 2px white;
+}
+
+#nav li a.current {
+	background-color: orange;
 }
 #main-contenedor{
 	width:100%;
 	min-width:1030px;
-	height: 25%;
+	height: 23%;
 	float:left;
 	overflow:hidden;
-	background: url(fondos/DSC_9520.JPG) center center no-repeat fixed;
+	background: url(Fondos/01.JPG) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 	
@@ -37,8 +63,9 @@ body{
 	height: 100%;
 	/*float:left;*/
 	background:url(imagenes/diamantecolor.png) no-repeat fixed center center;
-	background-size:40%;
+	background-size:30%;
 	background-attachment: fixed;
+	background-position: 50% 25%;
 }
 
 #articuloportada{
@@ -46,10 +73,10 @@ body{
 	float:right;
 	text-transform:uppercase;
 	width: 30%;
-	height: 25%;
+	height: 50%;
 	margin-top: 30%;
 	margin-right: 5%;
-	color:white;
+	color:black;
 }
 
 #articuloportada h1{
@@ -59,35 +86,101 @@ body{
 #main-contenedor2{
 	width: 100%;
 	min-width: 1030px;
-	height: 25%;
+	height: 23%;
 	float:left;
 	overflow:hidden;
-	background: url(fondos/DSC_9572.JPG) center center no-repeat fixed;
+	background: url(Fondos/05.JPG) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
 }
-
-
-#articulomundo{
+#iconos{
+	float:left;
+	width:100%;
+	height: 35%;
+	margin-top: 5%;
+	margin-right:4%; 
+	margin-left: 2.5%;
+	display: inline-block;
 	
-	text-transform: uppercase;
-	width: 40%;
-	height: 30%;
-	margin-top: 30%;
-	margin-left: 6%;
+}
+.caja1{
+	float:left;
+	width: 21%;
+	height: 80%;
+	padding: 1% 1% 1% 1%;
+	background-color: rgba(255,255,255,0.8);
+	border-radius:20px;
+	margin-right: 1%;
 
 }
-#articulomundo h1{
+.cajaicono:nth-child(1){
+	width: 100%;
+	height: 50%;
+	float: left;
+	background:url(iconos/worldmap-icon.png) no-repeat center center;
+	background-size: contain;
+
+	
+	
+}
+.cajaicono:nth-child(2){
+	width: 100%;
+	height: 50%;
+	float: left;
+	background:url(iconos/bulb-icon.png) no-repeat center center;
+	background-size: contain;
+
+}
+.cajaicono:nth-child(3){
+	width: 100%;
+	height: 50%;
+	float: left;
+	background:url(iconos/lock-icon.png) no-repeat center center;
+	background-size: contain;
+
+}
+.cajaicono:nth-child(4){
+	width: 100%;
+	height: 50%;
+	float: left;
+	background:url(iconos/setting-icon.png) no-repeat center center;
+	background-size: contain;
+
+}
+.textoicono{
+	float: left;
+	margin-top: 5%;
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	
+}
+
+#articulo2{
+	float:left;
+	text-transform: uppercase;
+	width: 100%;
+	height: 65%;
+	margin-top: 2%;
+	
+
+}
+#articulo2 h1{
 	margin-bottom: 5%;
+	text-align: center;
+}
+#articulo2 p{
+	text-align: center;
+	padding: 0% 5% 5% 5%;
 }
 #main-contenedor3{
 	width: 100%;
 	min-width: 1030px;
-	height: 25%;
+	height: 23%;
 	float:left;
 	overflow:hidden;
-	background: url(fondos/DSCN0248tokluz.jpg) center center no-repeat fixed;
+	background: url(Fondos/051.jpg) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -98,7 +191,7 @@ body{
 	height:100%;
 	float:left;
 	overflow:hidden;
-	background: url(fondos/mundodoradoportatilsolocopia.png) center center no-repeat fixed;
+	background: url(Fondos/mundodoradoportatilsolocopia.png) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -106,11 +199,195 @@ body{
 #main-contenedor4{
 	width: 100%;
 	min-width: 1030px;
-	height: 25%;
+	height: 23%;
 	float:left;
 	overflow:hidden;
-	background: url(fondos/DSC_9562.JPG) center center no-repeat fixed;
+	background: url(Fondos/03.JPG) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
+}
+
+
+footer{
+	float:left;
+	width: 100%;
+	height: 8%;
+	color:#ccc;
+	font-size:12px;
+
+	position:relative;
+	z-index:-2;
+
+	background-color:#31353a;
+
+	background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
+	background-image:-moz-linear-gradient(top, #31353a, #2f3337);
+	background-image:linear-gradient(top, #31353a, #2f3337);
+}
+
+/* Set a width to the outermost UL and center it */
+
+footer > ul{
+	width:960px;
+	position:fixed;
+	left:50%;
+	bottom:0;
+	margin-left:-480px;
+	padding-bottom: 60px;
+	z-index:-1;
+}
+
+/* The four columns of links */
+
+footer > ul > li{
+	width:25%;
+	float:left;
+}
+
+footer ul{
+	list-style: none;
+}
+
+/* The links */
+
+footer > ul > li ul li{
+	margin-left:43px;
+	text-transform: uppercase;
+	font-weight:bold;
+	line-height:1.8;
+}
+
+footer > ul > li ul li a{
+	text-decoration: none !important;
+	color:#7d8691 !important;
+}
+
+footer > ul > li ul li a:hover{
+	color:#ddd !important;
+}
+
+/* The company logo */
+
+footer a.logo{
+	color: #e4e4e4 !important;
+	text-decoration: none !important;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	text-transform: uppercase;
+	margin-left: 16px;
+	display: inline-block;
+	margin-top: 7px;
+}
+
+footer a.logo i{
+	font-style: normal;
+	position: absolute;
+	width: 60px;
+	display: block;
+	left: 48px;
+	top: 18px;
+	font-size: 12px;
+	color: #999;
+}
+
+footer a.logo:before{
+	content: '';
+	display: inline-block;
+	background: url('../img/sprite.png') no-repeat -19px -70px;
+	width: 48px;
+	height: 37px;
+	vertical-align: text-top;
+}
+
+/* Common styles for the four color bars */
+
+footer p{
+	width: 90%;
+	margin-right: 10%;
+	padding: 9px 0;
+	line-height: 18px;
+	background-color: #058cc7;
+	font-weight: bold;
+	font-size: 14px;
+	color:#fff;
+	text-transform: uppercase;
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	margin-bottom: 20px;
+	opacity:0.9;
+	cursor:default;
+
+	-webkit-transition: opacity 0.4s;
+	-moz-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+}
+
+footer > ul > li:hover p{
+	opacity:1;
+}
+
+footer p:before{
+	content: '';
+	display: inline-block;
+	background: url('../img/sprite.png') no-repeat;
+	width: 16px;
+	height: 18px;
+	margin: 0 12px 0 15px;
+	vertical-align: text-bottom;
+}
+
+
+/*-------------------------
+	The different colors
+--------------------------*/
+
+
+footer p.home{
+	background-color: #0096d6;
+
+	background-image:-webkit-linear-gradient(top, #0096d6, #008ac6);
+	background-image:-moz-linear-gradient(top, #0096d6, #008ac6);
+	background-image:linear-gradient(top, #0096d6, #008ac6);
+}
+
+footer p.home:before{
+	background-position: 0 -110px;
+}
+
+footer p.services{
+	background-color: #00b274;
+
+	background-image:-webkit-linear-gradient(top, #00b274, #00a46b);
+	background-image:-moz-linear-gradient(top, #00b274, #00a46b);
+	background-image:linear-gradient(top, #00b274, #00a46b);
+}
+
+footer p.services:before{
+	background-position: 0 -129px;
+}
+
+footer p.reachus{
+	background-color: #d75ba2;
+
+	background-image:-webkit-linear-gradient(top, #d75ba2, #c75496);
+	background-image:-moz-linear-gradient(top, #d75ba2, #c75496);
+	background-image:linear-gradient(top, #d75ba2, #c75496);
+}
+
+footer p.reachus:before{
+	background-position: 0 -89px;
+}
+
+footer p.clients{
+	background-color: #e9ac40;
+
+	background-image:-webkit-linear-gradient(top, #e9ac40, #d89f3b);
+	background-image:-moz-linear-gradient(top, #e9ac40, #d89f3b);
+	background-image:linear-gradient(top, #e9ac40, #d89f3b);
+}
+
+footer p.clients:before{
+	background-position: 0 -69px;
 }
