@@ -21,14 +21,29 @@ module.exports = function (grunt) {
                 path: localhost + dev_port,
                 app: development_browser
             }
+        },
+        //Sass
+        sass: {
+            src: {
+                options: { outputStyle: "compressed" },
+                files: [{ expand: true, cwd: "src/sass", src: ["**/*.scss"], dest: "public/styles", ext: ".css" }]
+            }
+        },
+        //Sass
+        watch: {
+            sass: { files: ["src/sass/**/*.scss"], tasks: ["sass:src"] }
         }
+
     });
 
     //Dependencies
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-connect');
+     grunt.loadNpmTasks("grunt-sass");
+    grunt.loadNpmTasks("grunt-contrib-watch");
 
     //Task definition
     grunt.registerTask('default', 'dev');
     grunt.registerTask('dev', ['open:dev', 'connect:dev']);
+    grunt.registerTask('monitor', ['sass', 'watch']);
 };

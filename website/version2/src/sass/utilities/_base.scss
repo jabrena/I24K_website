@@ -1,11 +1,11 @@
-*{
-	margin:0;
-  	padding:0;
-	list-style:none;
-	text-decoration:none;
-	
-	/*color:rgb(0,0,0);*/
+/* Layout */
+html{
+	height: 100%;
+	-ms-text-size-adjust: 100%; 
+ 	-webkit-text-size-adjust: 100%; 
 }
+
+
 
 
 body{
@@ -50,7 +50,7 @@ body{
 	height: 23%;
 	float:left;
 	overflow:hidden;
-	background: url(bk/01.JPG) center center no-repeat fixed;
+	background: url(../styles/bk/01.JPG) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 	
@@ -62,8 +62,8 @@ body{
 	width: 100%;
 	height: 100%;
 	/*float:left;*/
-	background:url(img/diamond.svg) no-repeat fixed center center;
-	background:url(img/diamond.png) no-repeat fixed center center;
+	background:url(../styles/img/diamond.svg) no-repeat fixed center center;
+	background:url(../styles/img/diamond.png) no-repeat fixed center center;
 	background-size:30%;
 	background-attachment: fixed;
 	background-position: 50% 25%;
@@ -90,7 +90,7 @@ body{
 	height: 23%;
 	float:left;
 	overflow:hidden;
-	background: url(bk/05.JPG) center center no-repeat fixed;
+	background: url(../styles/bk/05.JPG) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -119,7 +119,7 @@ body{
 	width: 100%;
 	height: 50%;
 	float: left;
-	background:url(iconos/worldmap-icon.png) no-repeat center center;
+	background:url(../styles/iconos/worldmap-icon.png) no-repeat center center;
 	background-size: contain;
 
 	
@@ -129,7 +129,7 @@ body{
 	width: 100%;
 	height: 50%;
 	float: left;
-	background:url(iconos/bulb-icon.png) no-repeat center center;
+	background:url(../styles/iconos/bulb-icon.png) no-repeat center center;
 	background-size: contain;
 
 }
@@ -137,7 +137,7 @@ body{
 	width: 100%;
 	height: 50%;
 	float: left;
-	background:url(iconos/lock-icon.png) no-repeat center center;
+	background:url(../styles/iconos/lock-icon.png) no-repeat center center;
 	background-size: contain;
 
 }
@@ -145,7 +145,7 @@ body{
 	width: 100%;
 	height: 50%;
 	float: left;
-	background:url(iconos/setting-icon.png) no-repeat center center;
+	background:url(../styles/iconos/setting-icon.png) no-repeat center center;
 	background-size: contain;
 
 }
@@ -181,7 +181,7 @@ body{
 	height: 23%;
 	float:left;
 	overflow:hidden;
-	background: url(bk/051.jpg) center center no-repeat fixed;
+	background: url(../styles/bk/051.jpg) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -192,7 +192,7 @@ body{
 	height:100%;
 	float:left;
 	overflow:hidden;
-	background: url(bk/mundodoradoportatilsolocopia.png) center center no-repeat fixed;
+	background: url(../styles/bk/mundodoradoportatilsolocopia.png) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -203,7 +203,7 @@ body{
 	height: 23%;
 	float:left;
 	overflow:hidden;
-	background: url(bk/03.JPG) center center no-repeat fixed;
+	background: url(../styles/bk/03.JPG) center center no-repeat fixed;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -296,7 +296,7 @@ footer a.logo i{
 footer a.logo:before{
 	content: '';
 	display: inline-block;
-	background: url('img/sprite.png') no-repeat -19px -70px;
+	background: url(../styles/'img/sprite.png') no-repeat -19px -70px;
 	width: 48px;
 	height: 37px;
 	vertical-align: text-top;
@@ -332,7 +332,7 @@ footer > ul > li:hover p{
 footer p:before{
 	content: '';
 	display: inline-block;
-	background: url('../img/sprite.png') no-repeat;
+	background: url(../styles/'../img/sprite.png') no-repeat;
 	width: 16px;
 	height: 18px;
 	margin: 0 12px 0 15px;
@@ -392,3 +392,4 @@ footer p.clients{
 footer p.clients:before{
 	background-position: 0 -69px;
 }
+
