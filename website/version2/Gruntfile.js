@@ -45,5 +45,5 @@ module.exports = function (grunt) {
     //Task definition
     grunt.registerTask('default', 'dev');
     grunt.registerTask('dev', ['open:dev', 'connect:dev']);
-    grunt.registerTask('monitor', ['sass', 'watch']);
+    grunt.registerTask('monitor', 'watch');
 };

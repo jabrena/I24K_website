@@ -11,8 +11,8 @@
 @mixin ico($img,$position:0 0,$size:initial,$color:transparent,$repeat: no-repeat) {
     background: {
     	color: $color;
-    	//image: url("images/"+$img+".png");
-        image: url("images/"+$img+".svg"), none;
+    	image: url($img+".png");
+        image: url($img+".svg"), none;
         position: $position;
         repeat: $repeat;
         size: $size;
@@ -26,13 +26,14 @@
  	@include ico($img);
 }
 
-@function em($target, $context: $body-font-size) {
-    @if $target == 0 { @return 0 }
-    @return $target / $context + 0em;
-}
 
 @mixin calc($property, $expression) { 
     #{$property}: -webkit-calc(#{$expression}); 
     #{$property}: -moz-calc(#{$expression}); 
     #{$property}: calc(#{$expression}); 
+}
+
+@mixin bg-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
 }
