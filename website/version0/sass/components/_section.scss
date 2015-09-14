@@ -58,11 +58,10 @@ article {
 
 			}
 
-		 &.web
-		 	{
-				margin:0 0 0 7.7rem;
-		 		span.icon{background: url('img/sprite.svg') center top no-repeat;}
-		 		} 
+		 &.web{
+			margin:0 0 0 7.7rem;
+ 			span.icon{background: url('img/web.svg') center top no-repeat;}
+ 		 } 
          &.mobile span.icon{background: url('img/sprite.svg') center -10rem no-repeat;}
 		 &.ux span.icon{background: url('img/sprite.svg') center -20rem no-repeat;}
 		 &.iot span.icon{background: url('img/sprite.svg') center -30rem no-repeat;}

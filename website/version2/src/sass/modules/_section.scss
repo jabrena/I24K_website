@@ -47,25 +47,25 @@ section:nth-child(2){
 	ul{
 
 		position:absolute;
-		top:35%;
+		top:25%;
 		width:100%;
 
 		li{
 			display:inline-block;
-			width:9.6rem;
-			heigth:9.6rem;
+			width:1%;
+			height:80%;
 			overflow:hidden;
-			padding:3% 8%;
+			padding:11%;
 			margin-right: 1%;
 			border-radius:50%;
 			
 			span{display:none;}	
 
 			
-		 &.web{background: url('img/sprite.svg') center top no-repeat;} 
-         &.mobile {background: url('img/sprite.svg') center -10rem no-repeat;}
-		 &.ux {background: url('img/sprite.svg') center -20rem no-repeat;}
-		 &.iot {background: url('img/sprite.svg') center -30rem no-repeat;}
+		 &.web{background: url('img/web.svg') center center no-repeat, rgba($std-white, 0.3); background-size:50%, contain;} 
+         &.mobile {background: url('img/mobile.svg') center center no-repeat, rgba($std-white, 0.3); background-size:28%, contain;}
+		 &.ux {background: url('img/ux.svg') center center no-repeat, rgba($std-white, 0.3); background-size:43%, contain;}
+		 &.iot {background: url('img/iot.svg') center center no-repeat, rgba($std-white, 0.3); background-size:50%, contain;}
 
 			
 		}
