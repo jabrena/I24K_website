@@ -4,7 +4,7 @@ footer{
 	float:left;
 	width: 100%;
 	height: 20%;
-	color:#ccc;
+	color:$std-color-1;
 	font-size:12px;
 	position:relative;
 	z-index:-2;
@@ -26,57 +26,67 @@ footer > ul{
 
 /* The four columns of links */
 
-footer > ul > li{
-	width:25%;
-	float:left;
+footer ul {
+	
+		list-style: none;
+		
+		overflow:hidden;
+
+
+		li{
+			width:25%;
+			float:left;
+
+			ul {
+
+				margin:0;
+				padding:0;
+				height:auto;
+				position:relative;
+				li{
+					width:auto;
+					margin-left:0.5rem;
+					text-transform: uppercase;
+					font-weight:bold;
+					line-height:1.8;
+				}
+			}	
+		}
+		
+	a{
+		text-decoration: none;
+		color:$std-color-2;
+
+		&:hover{
+			color:$std-color-3;
+		}
+
+		&.logo{
+			color: $std-color-4;
+			font-size: 14px;
+			font-weight: bold;
+			position: relative;
+			text-transform: uppercase;
+			margin-left: 16px;
+			display: inline-block;
+			margin-top: 7px;
+
+			i{
+				font-style: normal;
+				display:inline-block;
+				font-size: 12px;
+				margin-left:2.8rem;
+				color: #999;
+			}
+		}
+	}
 }
 
-footer ul{
-	list-style: none;
-}
 
-/* The links */
-
-footer > ul > li ul li{
-	margin-left:43px;
-	text-transform: uppercase;
-	font-weight:bold;
-	line-height:1.8;
-}
-
-footer > ul > li ul li a{
-	text-decoration: none !important;
-	color:#7d8691 !important;
-}
-
-footer > ul > li ul li a:hover{
-	color:#ddd !important;
-}
 
 /* The company logo */
 
-footer a.logo{
-	color: #e4e4e4 !important;
-	text-decoration: none !important;
-	font-size: 14px;
-	font-weight: bold;
-	position: relative;
-	text-transform: uppercase;
-	margin-left: 16px;
-	display: inline-block;
-	margin-top: 7px;
-}
 
-footer a.logo i{
-	font-style: normal;
-	position: absolute;
-	width: 60px;
-	display: block;
-	left: 48px;
-	top: 18px;
-	font-size: 12px;
-	color: #999;
-}
 
 
 
@@ -107,15 +117,7 @@ footer > ul > li:hover p{
 	opacity:1;
 }
 
-footer p:before{
-	content: '';
-	display: inline-block;
-	background: url(../styles/'../img/sprite.png') no-repeat;
-	width: 16px;
-	height: 18px;
-	margin: 0 12px 0 15px;
-	vertical-align: text-bottom;
-}
+
 
 
 /*-------------------------
