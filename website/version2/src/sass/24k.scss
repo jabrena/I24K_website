@@ -31,5 +31,5 @@ $public-visibility: true; //Externalize visible and hidden classes
 
 
 @media (min-width: $rd-lg-min-width) {
-	
+	@import "modules/section.lg";
 }

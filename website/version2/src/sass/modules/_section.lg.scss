@@ -1,0 +1,25 @@
+section{
+
+	min-width:1030px;
+
+	&:nth-child(1){
+		background-size:  30%, cover;
+		height: 45%;
+
+
+		article {
+			
+			right:5%;
+			top:30%;
+			width: 30%;
+			height: 50%;
+		}
+		
+	}
+
+	&:nth-child(2){
+		
+		height: 35%;
+	}
+
+}
