@@ -1,3 +1,7 @@
+footer{
+	height: 20%;
+}
+
 footer > ul{
 	width:960px;
 	margin:0 auto;
@@ -8,3 +12,24 @@ footer > ul{
 	padding-bottom: 60px;
 	z-index:-1;
 }
+
+footer ul{
+
+		 li{
+			width:25%;
+			padding:0;
+
+			ul li{
+				width:100%;
+
+			}		
+		}
+
+		p{
+			width: 90%;
+			padding: 0 1rem;
+		}
+
+}
+
+	

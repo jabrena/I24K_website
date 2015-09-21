@@ -3,7 +3,7 @@
 footer{
 	float:left;
 	width: 100%;
-	height: 20%;
+	height: auto;
 	color:$std-color-1;
 	font-size:12px;
 	position:relative;
@@ -14,13 +14,9 @@ footer{
 /* Set a width to the outermost UL and center it */
 
 footer > ul{
-	width:95;
-	margin:0 auto;
-	position:fixed;
-	left:50%;
-	bottom:15%;
-	margin-left:-480px;
-	padding-bottom: 60px;
+	width:98%;
+	margin:4rem auto;
+	padding:0;
 	z-index:-1;
 }
 
@@ -31,11 +27,12 @@ footer ul {
 		list-style: none;
 		
 		overflow:hidden;
-
-
 		li{
-			width:25%;
+			width:50%;
+			display:inline-block;
 			float:left;
+			padding: 0 0 1rem 0;
+
 
 			ul {
 
@@ -49,12 +46,13 @@ footer ul {
 					text-transform: uppercase;
 					font-weight:bold;
 					line-height:1.8;
+					padding:0;
 				}
 			}
 			p{
-				width: 20rem;
+				width: 90%;
 				line-height: 3.6rem;
-				padding:0 1rem 0 1rem;
+				padding:0 0 0 1rem;
 				margin:0 0 1.5rem 0;
 				font-weight: bold;
 				font-size: 14px;
