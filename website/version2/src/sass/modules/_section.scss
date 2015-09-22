@@ -6,7 +6,7 @@ section{
 	display:inline-block;
 	position:relative;
 	&:nth-child(1){
-		background: url(img/diamond.svg) 50% 25% no-repeat fixed , url(img/bk01.jpg) center center no-repeat fixed;
+		background: url(img/diamond.svg) 50% 50% no-repeat fixed , url(img/bk01.jpg) center center no-repeat fixed;
 		background-size:  63%, cover;
 		background-attachment: fixed;
 		height:40%;
