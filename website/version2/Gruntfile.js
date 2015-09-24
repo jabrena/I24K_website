@@ -1,9 +1,10 @@
+/*jslint node: true */
 'use strict';
 
 module.exports = function (grunt) {
-    var localhost = 'http://localhost:';
-    var dev_port = 9000;
-    var development_browser = "Google Chrome";
+    var localhost = 'http://localhost:',
+        dev_port = 9000,
+        development_browser = "Google Chrome";
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -39,11 +40,11 @@ module.exports = function (grunt) {
     //Dependencies
     grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-connect');
-     grunt.loadNpmTasks("grunt-sass");
+    grunt.loadNpmTasks("grunt-sass");
     grunt.loadNpmTasks("grunt-contrib-watch");
 
     //Task definition
     grunt.registerTask('default', 'dev');
     grunt.registerTask('dev', ['open:dev', 'connect:dev']);
-    grunt.registerTask('monitor', 'watch');
+    grunt.registerTask("monitor", ["sass", "watch"]);
 };

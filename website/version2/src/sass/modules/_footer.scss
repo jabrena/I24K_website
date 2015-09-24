@@ -66,6 +66,9 @@ footer ul {
 				-moz-transition: opacity 0.4s;
 				transition: opacity 0.4s;
 
+				border-top-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+
 				&.home{background: $std-bg-footer-1;}
 				&.services{background: $std-bg-footer-2;}
 				&.reachus{background: $std-bg-footer-3;}
