@@ -1,15 +1,17 @@
 footer{
-	height: 20%;
+	height: 10%;
 }
 
 footer > ul{
 	width:960px;
 	margin:0 auto;
-	position:fixed;
-	left:50%;
-	bottom:15%;
-	margin-left:-480px;
-	padding-bottom: 60px;
+	position:relative;
+	top:30%;
+	// position:fixed;
+	// left:50%;
+	// bottom:15%;
+	// margin-left:-480px;
+	// padding-bottom: 60px;
 	z-index:-1;
 }
 

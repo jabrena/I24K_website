@@ -4,10 +4,28 @@ section{
 
 	&:nth-child(1){
 		background-size:  50%, cover;
-		height: 45%;
+		height:65%;
 
 		&.alt{
 			background-size: 50%, cover;
 		}
 	}
+
+	// &:nth-child(2){
+	// 	height: 35%;
+
+	// 	article ul {
+	// 		position:absolute;
+	// 		top:25%;
+	// 		width:100%;
+	// 		margin:0;
+
+	// 		li{
+	// 			width:1%;
+				
+	// 			margin: 0 1% 0 0;
+	// 			padding:11%;
+	// 		}
+	// 	}
+	// }
 }

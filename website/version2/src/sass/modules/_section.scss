@@ -9,30 +9,69 @@ section{
 
 section:nth-child(1){
 
-		background: url(img/diamond.svg) 50% 50% no-repeat fixed , $std-bg center center no-repeat fixed;
+		background: url(img/diamond.svg) 50% 50% no-repeat , $std-bg center center no-repeat;
 		background-size:  90%, cover;
-		background-attachment: fixed;
+		// background-attachment: fixed;
 		height:50%;
 		
 		&.alt{
-			background: url(img/diamond2.svg) 50% 50% no-repeat fixed , $std-bg center center no-repeat fixed;
+			background: url(img/diamond2.svg) 50% 50% no-repeat , $std-bg center center no-repeat;
 			background-size: 90%, cover;
 		}
 
-	article {
-		text-align: left;
-		position:absolute;
-		right:17%;
-		bottom:4%;
-		text-transform:uppercase;
-		width:70%;
-		height: 38%;
-		color:$std-black-color;
+	// article {
+	// 	text-align: left;
+	// 	position:absolute;
+	// 	right:17%;
+	// 	bottom:4%;
+	// 	text-transform:uppercase;
+	// 	width:70%;
+	// 	height: 38%;
+	// 	color:$std-black-color;
 		
-		h1{
-			font-size: 2em;
-		}
-		p{margin:0 0 1rem 0;}
-	}
+	// 	h1{
+	// 		font-size: 2em;
+	// 	}
+	// 	p{margin:0 0 1rem 0;}
+	// }
 }
 
+
+// section:nth-child(2){
+
+// 	overflow:hidden;
+// 		background: $std-bg no-repeat fixed;
+// 		background-size: cover;
+// 		background-attachment: fixed;
+// 		height:35%;
+
+
+// 	ul{
+		
+// 		position:relative;
+// 		margin:2rem auto;
+// 		top:0;
+// 		width:90%;
+// 		padding:0;
+// 		text-align:center;
+
+// 		li{
+// 			display:inline-block;
+// 			width:3%;
+// 			height:80%;
+// 			overflow:hidden;
+// 			padding:18%;
+// 			margin:1rem 1rem;
+// 			border-radius:50%;
+			
+// 			span{display:none;}	
+
+			
+// 		 &.web{background: url('img/web.svg') center center no-repeat, rgba($std-white, 0.3); background-size:50%, contain;} 
+//          &.mobile {background: url('img/mobile.svg') center center no-repeat, rgba($std-white, 0.3); background-size:28%, contain;}
+// 		 &.ux {background: url('img/ux.svg') center center no-repeat, rgba($std-white, 0.3); background-size:43%, contain;}
+// 		 &.iot {background: url('img/iot.svg') center center no-repeat, rgba($std-white, 0.3); background-size:50%, contain;}
+
+			
+// 		}
+	

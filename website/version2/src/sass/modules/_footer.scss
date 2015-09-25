@@ -1,14 +1,15 @@
 
 
 footer{
-	float:left;
 	width: 100%;
+	display:inline-block;
 	height: auto;
 	color:$std-color-1;
 	font-size:12px;
 	position:relative;
 	z-index:-2;
-	background-color:$std-bg;
+	background:$std-white;
+	position:relative;
 }
 
 /* Set a width to the outermost UL and center it */
