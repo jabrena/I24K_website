@@ -23,7 +23,6 @@ $public-visibility: true; //Externalize visible and hidden classes
 
 /*App imports - Modules*/
 @import "modules/section";
-@import "modules/footer";
 
 
 @media (min-width: $rd-md-min-width) {
@@ -32,7 +31,6 @@ $public-visibility: true; //Externalize visible and hidden classes
 
 
 @media (min-width: $rd-lg-min-width) {
-	@import "modules/section.lg";
-	@import "modules/footer.lg";
 	@import "modules/body.lg";
+	@import "modules/section.lg";	
 }
