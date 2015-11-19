@@ -1,7 +1,6 @@
 
 section{
-	width:100%;
-	
+	width:100%;	
 	overflow:hidden;
 	display:inline-block;
 	position:relative;
@@ -11,16 +10,17 @@ section{
 		display:table;
 		background: url(img/diamond.svg) 50% 50% no-repeat , $std-bg center center no-repeat;
 		background-size: 90%, cover;
-		// background-attachment: fixed;
-		height:87rem;
+		height:45rem;
+		width:100%; 
 		
  	ul {	
 		list-style: none;
 		overflow:hidden;
 		display:table-cell;
 		vertical-align:bottom;	
-		width:65%;
+		text-align:center;
 		margin:0 auto; 
+		padding:0;
 
 		li{
 			
@@ -29,25 +29,23 @@ section{
 
 			p{
 				
-				line-height: 3.6rem;
-				
+				line-height: 3.6rem;				
 				font-weight: bold;
-				font-size: 20px;
+				font-size: 1.4rem;
 				color:$std-black-color;
-
 				opacity:0.8;
+				margin:0;
+				padding:0;
 				cursor:default;
-
 				-webkit-transition: opacity 0.9s;
 				-moz-transition: opacity 0.4s;
 				transition: opacity 0.4s;
-
 				border-top-left-radius: 10px;
 				border-bottom-right-radius: 10px;
 
 				&:after{
 					color:#4e6e95;
-					padding:0 1rem;
+					padding:0 0.5rem;
 					content:"-"
 				}
 			}
@@ -63,17 +61,17 @@ section{
 			}
 		}
 		
-	a{
-		text-decoration: none;
-		color:$std-color-2;
+		a{
+			text-decoration: none;
+			color:$std-color-2;
 
-		&:hover{
-			color:$std-color-3;
+			&:hover{
+				color:$std-color-3;
+			}
+
+			
 		}
-
-		
-	}
-  }
+ 	}
 	
 }
 

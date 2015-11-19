@@ -1,15 +1,16 @@
 section{
 
-	min-width:1030px;
+	background-size: 50%, cover;
+	height:87rem;
 
-	&:nth-child(1){
-		background-size:  50%, cover;
-		height:87rem;
+	ul li p{
+		font-size: 2.2rem;
 
-		&.alt{
-			background-size: 50%, cover;
-		}
+		&:after{
+				color:#4e6e95;
+				padding:0 0.5rem;
+				content:"-"
+			}
 	}
-
 	
 }
