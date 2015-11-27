@@ -1,0 +1,1 @@
+!function(){"use strict";document.addEventListener("DOMContentLoaded",function(){new Zodiac("zodiac",{directionX:0,directionY:-1,velocityX:[.1,.2],velocityY:[.5,1],bounceX:!0,bounceY:!1,parallax:.5,pivot:0,density:1e4,dotRadius:5,dotColor:"rgba(255,197,69,0.5)",linkColor:"rgba(99,99,99,0.2)",linkDistance:50,linkWidth:2})},!1)}(jQuery);

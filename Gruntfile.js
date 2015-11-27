@@ -8,6 +8,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        webContent: 'public',
 
         //Run a web server
         connect: {
@@ -27,12 +28,32 @@ module.exports = function (grunt) {
         sass: {
             src: {
                 options: { outputStyle: "compressed" },
-                files: [{ expand: true, cwd: "src/sass", src: ["**/*.scss"], dest: "public/styles", ext: ".css" }]
+                files: [{ expand: true, cwd: "src/sass", src: ["**/*.scss"], dest: "<%= webContent %>/styles", ext: ".css" }]
             }
         },
+
+        uglify: {
+            srcjs: {
+                files: [{expand: true, cwd: 'src/scripts', src: '**/*.js', dest: '<%= webContent %>/scripts'}]
+            }
+        },
+
+        clean: {
+            js: ['<%= webContent %>/scripts']
+        },
+
+        copy: {
+            
+            libpictures: {
+                files: [{expand: true, cwd: 'src/img', src: '**/*', dest: '<%= webContent %>/styles/img'}]
+            }
+        },
+
         //Sass
         watch: {
-            sass: { files: ["src/sass/**/*.scss"], tasks: ["sass:src"] }
+            sass: {files: ["src/sass/**/*.scss"], tasks: ["sass:src"]},
+            js: {files: ['src/scripts/**/*.js'], tasks: ['uglify:srcjs']},
+            libpictures: {files: ['src/img/**/*'], tasks: ['copy:libpictures']}
         }
 
     });
@@ -42,9 +63,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-connect');
     grunt.loadNpmTasks("grunt-sass");
     grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     //Task definition
     grunt.registerTask('default', 'dev');
     grunt.registerTask('dev', ['open:dev', 'connect:dev']);
-    grunt.registerTask("monitor", ["sass", "watch"]);
+    grunt.registerTask('monitor', ['sass', 'clean', 'copy', 'uglify', 'watch']);
 };

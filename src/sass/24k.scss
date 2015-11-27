@@ -13,7 +13,7 @@ $public-visibility: true; //Externalize visible and hidden classes
 @import "core/list";
 @import "core/accessibility";
 @import "modules/animated";
-
+@import "modules/canvas";
 /*App imports - Base*/
 
 @import "utilities/variables";
