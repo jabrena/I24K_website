@@ -1,17 +1,11 @@
 
 section{
-	width:100%;	
-	overflow:hidden;
-	display:inline-block;
-	position:relative;
-}
-
-section{
 		display:table;
 		background: url(img/diamond.svg) 50% 50% no-repeat;
-		background-size: 90%, cover;
-		height:45rem;
+		background-size: 90%;
+		height:100vh;
 		width:100%; 
+		position:relative;
 		
  	ul {	
 		list-style: none;
