@@ -34,3 +34,8 @@ $public-visibility: true; //Externalize visible and hidden classes
 	@import "modules/body.lg";
 	@import "modules/section.lg";	
 }
+
+@media (min-width: 320px) and (max-width: 736px) and (orientation: landscape) { 
+	
+	@import "modules/section.mb";	
+}
